@@ -1,0 +1,319 @@
+/* Genel stil */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.map {
+    width: 100%;
+    height: 100vh; /* Harita ekranı kaplayacak şekilde */
+}
+
+/* Navbar stilleri */
+nav {
+    background-color: #012043; /* Modern mavi navbar rengi */
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav button {
+    background-color: #6392c5; /* Mavi temalı butonlar */
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+nav button:hover {
+    background-color: #0056b3; /* Hover efekti */
+    transform: translateY(-2px); /* Buton hover animasyonu */
+}
+
+/* Tablo stili */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+    background-color: #09274a; /* Başlık için mavi tema */
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Satırların arka planını değiştir */
+}
+
+table tr:hover {
+    background-color: #e9ecef; /* Satırın hover durumu */
+}
+
+/* Show, Update, Delete butonları */
+button.show-btn {
+    background-color: #28a745; /* Yeşil renk (Show) */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button.show-btn:hover {
+    background-color: #218838; /* Show butonu için hover efekti */
+    transform: translateY(-2px);
+}
+
+button.update-btn {
+    background-color: #007bff; /* Mavi renk (Update) */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button.update-btn:hover {
+    background-color: #0056b3; /* Update butonu için hover efekti */
+    transform: translateY(-2px);
+}
+
+button.delete-btn {
+    background-color: #f90019; /* Kırmızı renk (Delete) */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333; /* Delete butonu için hover efekti */
+    transform: translateY(-2px);
+}
+
+/* Form elemanları */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f7f8fa;
+}
+
+input[type="text"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+button#addPointButton, button#updatePointButton {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button#addPointButton:hover, button#updatePointButton:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+/* Cancel Butonu için stil */
+button.cancel-btn {
+    background-color: #6c757d; /* Gri renk (Cancel) */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button.cancel-btn:hover {
+    background-color: #5a6268; /* Cancel butonu için hover efekti */
+    transform: translateY(-2px);
+}
+
+/* Panelin genel stilini düzenle */
+.jsPanel {
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Başlık stilini güncelle */
+.jsPanel-hdr {
+    background-color: #4A90E2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Panel içeriği için padding ve yazı stilleri */
+.jsPanel-content {
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Manuel ve Panel butonları için stil */
+button.update-btn {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Buton hover durumu */
+button.update-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+/* Butonların yan yana düzgün hizalanması */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.jsPanel {
+    background-color: #f0f8ff;
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.jsPanel .jsPanel-hdr {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+}
+
+.jsPanel .jsPanel-content {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+button.draw-btn {
+    background-color: #113558;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.draw-btn:hover {
+    background-color: #4682b4;
+}
+
+button.cancel-btn {
+    background-color: #194b9b;
+    color: white;
+    padding: 8px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.cancel-btn:hover {
+    background-color: #194b9b;
+}
+.jsPanel .jsPanel-hdr {
+    background-color: #113558 !important; /* Mavi arka plan */
+    color: white !important; /* Beyaz yazı rengi */
+}
+
+.jsPanel .jsPanel-title {
+    color: white !important; /* Başlık yazısının beyaz olması */
+}
+
+.jsPanel-hdr-toolbar {
+    background-color: #093867 !important; /* Üst toolbar da mavi */
+}
+button {
+    background-color: #093867; /* Mavi arka plan */
+    color: white; /* Beyaz yazı rengi */
+    border: none; /* Çerçeveyi kaldır */
+    padding: 10px 20px; /* İç boşluk ekle */
+    font-size: 14px; /* Yazı boyutu */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    cursor: pointer; /* Fare işareti */
+}
+
+button:hover {
+    background-color: #104E8B; /* Üzerine gelince daha koyu mavi */
+}
+button#confirmDelete {
+    background-color: #FF4136; /* "Yes" butonu için kırmızı */
+    color: white;
+    padding: 10px 20px; /* Buton boyutu */
+    border: none;
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    cursor: pointer;
+    font-size: 14px; /* Yazı boyutu */
+    margin-right: 10px; /* Sağ tarafa boşluk bırak */
+}
+
+button#confirmDelete:hover {
+    background-color: #C0392B; /* Üzerine gelindiğinde daha koyu kırmızı */
+}
+
+button#cancelDelete {
+    background-color: #093867; /* "No" butonu için mavi */
+    color: white;
+    padding: 10px 20px; /* Buton boyutu */
+    border: none;
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    cursor: pointer;
+    font-size: 14px; /* Yazı boyutu */
+}
+
+button#cancelDelete:hover {
+    background-color: #0056b3; /* Üzerine gelindiğinde daha koyu mavi */
+}
