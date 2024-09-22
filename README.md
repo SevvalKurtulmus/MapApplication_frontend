@@ -21,6 +21,8 @@ This is a simple map-based web application built using HTML, CSS, and JavaScript
 Click the link below to watch the video and see how the project works:
 
 [Watch the Project](https://youtu.be/8RMm4dhzJ-k?si=e27FmMjZCwtEWlvY)
+
+
 --------------------------------------------------------------------------------------------------------------------------------
 
 # Harita Uygulaması
